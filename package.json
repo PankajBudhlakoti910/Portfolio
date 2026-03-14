@@ -1,0 +1,21 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "🚀 **Data-driven Analyst with 6.5+ years of experience** in data operations, analytics, and automation.   I specialize in **SQL, Python, Power BI, and workflow automation** to deliver clean, accurate, and actionable insights.   My goal is to **streamline reporting, reduce manual effort, and empower business decisions with data.**",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PankajBudhlakoti910/Portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/PankajBudhlakoti910/Portfolio/issues"
+  },
+  "homepage": "https://github.com/PankajBudhlakoti910/Portfolio#readme"
+}

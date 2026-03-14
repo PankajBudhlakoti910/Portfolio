@@ -9,46 +9,69 @@
     .automation-badge {
       background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     }
+    /* Freelance section styles */
+    .proj-card {
+      transition: all 0.2s ease;
+      cursor: pointer;
+    }
+    .proj-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .proj-card.active {
+      border-color: #7c3aed !important;
+      border-width: 2px;
+    }
+    .detail-panel {
+      animation: slideIn 0.25s ease;
+    }
+    @keyframes slideIn {
+      from { opacity: 0; transform: translateY(-8px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    .feature-item::before {
+      content: "✓ ";
+      color: #059669;
+      font-weight: 700;
+    }
   </style>
 </head>
 <body class="bg-gray-100 text-gray-800">
-  <!-- Container -->
   <div class="max-w-4xl mx-auto p-6">
-    
-    <!-- Header with Automation Focus -->
+
+    <!-- Header -->
     <header class="text-center mb-10 bg-white p-6 rounded-lg shadow-md">
       <h1 class="text-4xl font-bold text-gray-900">Pankaj Budhlakoti</h1>
       <p class="text-xl text-purple-600 font-semibold">Data Analyst | Automation Specialist</p>
-      <div class="flex justify-center gap-2 mt-2">
+      <div class="flex justify-center gap-2 mt-2 flex-wrap">
         <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">Python Automation</span>
         <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Workflow Optimization</span>
         <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">BI Tools</span>
       </div>
       <p class="text-gray-600 mt-4">
-        📧 <a href="mailto:pankaj.budhlakoti@clicflyer.com" class="text-blue-600 hover:underline">pankaj.budhlakoti@clicflyer.com</a> |  
+        📧 <a href="mailto:pankaj.budhlakoti@clicflyer.com" class="text-blue-600 hover:underline">pankaj.budhlakoti@clicflyer.com</a> |
         💻 <a href="https://github.com/your-username" target="_blank" class="text-blue-600 hover:underline">GitHub</a> |
         🔗 <a href="#" class="text-blue-600 hover:underline">LinkedIn</a>
       </p>
     </header>
 
-    <!-- Objective with Automation Emphasis -->
+    <!-- Objective -->
     <section class="mb-8 bg-white p-6 rounded-lg shadow-md">
       <h2 class="text-2xl font-semibold border-b pb-2 mb-4 flex items-center gap-2">
         <span>🎯</span> Automation-Focused Objective
       </h2>
       <p class="text-gray-700 leading-relaxed">
-        Passionate <b>Automation Specialist & Data Analyst</b> with proven expertise in transforming manual processes into efficient, 
-        automated workflows. Leveraging <b>Python, SQL, and VBA</b> to reduce manual effort by <b>70-80%</b> and improve data accuracy. 
+        Passionate <b>Automation Specialist & Data Analyst</b> with proven expertise in transforming manual processes into efficient,
+        automated workflows. Leveraging <b>Python, SQL, and VBA</b> to reduce manual effort by <b>70-80%</b> and improve data accuracy.
         Seeking to drive operational excellence through innovative automation solutions and data-driven insights.
       </p>
     </section>
 
-    <!-- Skills - Enhanced Automation Section -->
+    <!-- Skills -->
     <section class="mb-8 bg-white p-6 rounded-lg shadow-md">
       <h2 class="text-2xl font-semibold border-b pb-2 mb-4 flex items-center gap-2">
         <span>⚡</span> Core Competencies
       </h2>
-      
       <div class="grid md:grid-cols-2 gap-4">
         <div class="bg-purple-50 p-4 rounded-lg">
           <h3 class="font-bold text-purple-800 mb-2">🤖 Automation Tools</h3>
@@ -59,7 +82,6 @@
             <li><b>Task Scheduling:</b> Windows Task Scheduler, Cron jobs</li>
           </ul>
         </div>
-
         <div class="bg-blue-50 p-4 rounded-lg">
           <h3 class="font-bold text-blue-800 mb-2">📊 Data Analytics</h3>
           <ul class="list-disc list-inside space-y-1">
@@ -72,14 +94,13 @@
       </div>
     </section>
 
-    <!-- Work Experience with Automation Highlights -->
+    <!-- Experience -->
     <section class="mb-8 bg-white p-6 rounded-lg shadow-md">
       <h2 class="text-2xl font-semibold border-b pb-2 mb-4 flex items-center gap-2">
         <span>💼</span> Professional Experience
       </h2>
-
       <div class="mb-6 border-l-4 border-purple-500 pl-4">
-        <div class="flex justify-between items-start">
+        <div class="flex justify-between items-start flex-wrap gap-2">
           <h3 class="text-lg font-bold">Bodmas Technologies — Data Analyst (Automation Lead)</h3>
           <span class="bg-purple-100 text-purple-800 px-2 py-1 rounded text-sm">Apr 2025 – Present</span>
         </div>
@@ -89,9 +110,8 @@
           <li class="text-gray-700"><span class="font-semibold text-purple-700">🔄 Workflow:</span> Developed automated data validation scripts eliminating manual QC checks</li>
         </ul>
       </div>
-
       <div class="mb-6 border-l-4 border-blue-500 pl-4">
-        <div class="flex justify-between items-start">
+        <div class="flex justify-between items-start flex-wrap gap-2">
           <h3 class="text-lg font-bold">Bodmas Technologies — Junior Data Analyst</h3>
           <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-sm">Apr 2022 – Mar 2025</span>
         </div>
@@ -102,9 +122,8 @@
           <li class="text-gray-700"><span class="font-semibold text-blue-700">📅 Scheduled Reports:</span> Automated SQL query execution and report distribution via email using Python</li>
         </ul>
       </div>
-
       <div class="border-l-4 border-gray-500 pl-4">
-        <div class="flex justify-between items-start">
+        <div class="flex justify-between items-start flex-wrap gap-2">
           <h3 class="text-lg font-bold">Bodmas Technologies — Senior Data Entry Operator</h3>
           <span class="bg-gray-100 text-gray-800 px-2 py-1 rounded text-sm">Feb 2019 – Mar 2022</span>
         </div>
@@ -115,12 +134,11 @@
       </div>
     </section>
 
-    <!-- Automation Projects Showcase -->
+    <!-- Automation Projects -->
     <section class="mb-8 bg-white p-6 rounded-lg shadow-md">
       <h2 class="text-2xl font-semibold border-b pb-2 mb-4 flex items-center gap-2">
         <span>🚀</span> Featured Automation Projects
       </h2>
-      
       <div class="grid md:grid-cols-2 gap-4">
         <div class="border rounded-lg p-4 hover:shadow-lg transition">
           <span class="bg-purple-100 text-purple-800 px-2 py-1 rounded text-xs font-bold">Python</span>
@@ -128,21 +146,18 @@
           <p class="text-sm text-gray-600 mt-1">Python script using pandas & smtplib that processes daily sales data and emails formatted reports to stakeholders. Reduced 3-4 hour manual work to 15 minutes.</p>
           <p class="text-xs text-purple-600 mt-2">⏱️ Time saved: 85% | Daily automation</p>
         </div>
-
         <div class="border rounded-lg p-4 hover:shadow-lg transition">
           <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs font-bold">VBA</span>
           <h3 class="font-bold mt-2">Excel Dashboard with Auto-Update</h3>
           <p class="text-sm text-gray-600 mt-1">Interactive Excel dashboard with VBA macros that automatically refreshes data, formats reports, and generates insights with one click.</p>
           <p class="text-xs text-blue-600 mt-2">⏱️ Manual effort: 2 hrs → 5 mins</p>
         </div>
-
         <div class="border rounded-lg p-4 hover:shadow-lg transition">
           <span class="bg-green-100 text-green-800 px-2 py-1 rounded text-xs font-bold">API</span>
           <h3 class="font-bold mt-2">Automated Data Export System</h3>
           <p class="text-sm text-gray-600 mt-1">Python script using APIs to fetch vendor data weekly, process it, and save to Google Sheets. Zero manual intervention since deployment.</p>
           <p class="text-xs text-green-600 mt-2">⏱️ 100% automated | 10+ vendors</p>
         </div>
-
         <div class="border rounded-lg p-4 hover:shadow-lg transition">
           <span class="bg-orange-100 text-orange-800 px-2 py-1 rounded text-xs font-bold">SQL</span>
           <h3 class="font-bold mt-2">Automated Data Quality Checks</h3>
@@ -152,12 +167,64 @@
       </div>
     </section>
 
+    <!-- ===================== FREELANCE SECTION ===================== -->
+    <section class="mb-8 bg-white p-6 rounded-lg shadow-md">
+      <h2 class="text-2xl font-semibold border-b pb-2 mb-2 flex items-center gap-2">
+        <span>💡</span> Freelance & Independent Projects
+      </h2>
+      <p class="text-gray-500 text-sm mb-5">Click any project card to view details, tech stack, and live link.</p>
+
+      <!-- Project Cards Grid -->
+      <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-4" id="projGrid">
+
+        <div class="proj-card border rounded-lg p-4 bg-white" onclick="toggleDetail('buddyinhills')">
+          <span class="inline-block bg-green-100 text-green-800 text-xs font-bold px-2 py-1 rounded-full mb-2">Travel / Web</span>
+          <h3 class="font-bold text-gray-900 text-sm">BuddyInHills.com</h3>
+          <p class="text-xs text-gray-500 mt-1">Travel companion platform for hill trekkers</p>
+        </div>
+
+        <div class="proj-card border rounded-lg p-4 bg-white" onclick="toggleDetail('stoneagehuts')">
+          <span class="inline-block bg-yellow-100 text-yellow-800 text-xs font-bold px-2 py-1 rounded-full mb-2">Hospitality</span>
+          <h3 class="font-bold text-gray-900 text-sm">StoneAgeHuts.com</h3>
+          <p class="text-xs text-gray-500 mt-1">Boutique hut booking & discovery website</p>
+        </div>
+
+        <div class="proj-card border rounded-lg p-4 bg-white" onclick="toggleDetail('filesmerger')">
+          <span class="inline-block bg-purple-100 text-purple-800 text-xs font-bold px-2 py-1 rounded-full mb-2">Python / Vercel</span>
+          <h3 class="font-bold text-gray-900 text-sm">Files Merger</h3>
+          <p class="text-xs text-gray-500 mt-1">Web app for merging & comparing Excel/CSV files</p>
+        </div>
+
+        <div class="proj-card border rounded-lg p-4 bg-white" onclick="toggleDetail('datacomp')">
+          <span class="inline-block bg-teal-100 text-teal-800 text-xs font-bold px-2 py-1 rounded-full mb-2">Streamlit</span>
+          <h3 class="font-bold text-gray-900 text-sm">Data Comparison Tool</h3>
+          <p class="text-xs text-gray-500 mt-1">Side-by-side data diff with mismatch highlights</p>
+        </div>
+
+        <div class="proj-card border rounded-lg p-4 bg-white" onclick="toggleDetail('filemergerpb')">
+          <span class="inline-block bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded-full mb-2">Streamlit</span>
+          <h3 class="font-bold text-gray-900 text-sm">File Merger PB</h3>
+          <p class="text-xs text-gray-500 mt-1">Drag-and-drop multi-file merger tool</p>
+        </div>
+
+        <div class="proj-card border rounded-lg p-4 bg-white" onclick="toggleDetail('privatejobs')">
+          <span class="inline-block bg-red-100 text-red-800 text-xs font-bold px-2 py-1 rounded-full mb-2">Firebase</span>
+          <h3 class="font-bold text-gray-900 text-sm">Private Jobs Portal</h3>
+          <p class="text-xs text-gray-500 mt-1">Job listing platform for private sector roles</p>
+        </div>
+
+      </div>
+
+      <!-- Detail Panel (shown on card click) -->
+      <div id="detailArea"></div>
+    </section>
+    <!-- ===================== END FREELANCE ===================== -->
+
     <!-- Education & Certifications -->
     <section class="mb-8 bg-white p-6 rounded-lg shadow-md">
       <h2 class="text-2xl font-semibold border-b pb-2 mb-4 flex items-center gap-2">
         <span>📚</span> Education & Certifications
       </h2>
-      
       <div class="grid md:grid-cols-2 gap-4">
         <div>
           <h3 class="font-bold">Bachelor of Commerce</h3>
@@ -171,7 +238,7 @@
       </div>
     </section>
 
-    <!-- Automation Stats -->
+    <!-- Stats -->
     <section class="mb-8 grid grid-cols-2 md:grid-cols-4 gap-4">
       <div class="bg-purple-600 text-white p-4 rounded-lg text-center">
         <div class="text-3xl font-bold">70-80%</div>
@@ -193,9 +260,164 @@
 
     <!-- Footer -->
     <footer class="text-center mt-10 text-gray-600 bg-white p-4 rounded-lg shadow">
-      <p>🌐 Portfolio: <a href="#" class="text-purple-600 hover:underline">pankaj-automation.github.io</a> (Coming soon)</p>
+      <p>🌐 Portfolio: <a href="#" class="text-purple-600 hover:underline">pankaj-automation.github.io</a> </p>
       <p class="mt-2 text-sm">© 2025 Pankaj Budhlakoti - Automation & Data Analytics Portfolio</p>
     </footer>
-  </div>
+
+  </div><!-- end container -->
+
+  <!-- ===================== FREELANCE JS ===================== -->
+  <script>
+    const projects = {
+      buddyinhills: {
+        title: "BuddyInHills.com",
+        badgeText: "Travel / Web",
+        badgeClass: "bg-green-100 text-green-800",
+        desc: "A travel companion discovery platform designed for hill trekkers and adventure tourists. Users can find fellow trekkers, explore routes, and connect with local guides in Himalayan destinations.",
+        tech: ["HTML", "CSS", "JavaScript", "Tailwind CSS"],
+        features: [
+          "Trek buddy matchmaking system",
+          "Route discovery & trail maps",
+          "Local guide listings & profiles",
+          "Responsive mobile-first design"
+        ],
+        link: "https://buddyinhills.com"
+      },
+      stoneagehuts: {
+        title: "StoneAgeHuts.com",
+        badgeText: "Hospitality",
+        badgeClass: "bg-yellow-100 text-yellow-800",
+        desc: "A boutique hospitality website for unique stone-age-style hut accommodations in scenic locations. Showcases properties with galleries and handles booking inquiries online.",
+        tech: ["HTML", "CSS", "JavaScript"],
+        features: [
+          "Property showcase with photo gallery",
+          "Online booking inquiry form",
+          "Location maps & directions",
+          "Fully mobile responsive"
+        ],
+        link: "https://stoneagehuts.com"
+      },
+      filesmerger: {
+        title: "Files Merger (Vercel)",
+        badgeText: "Python / Vercel",
+        badgeClass: "bg-purple-100 text-purple-800",
+        desc: "A web-based tool for merging and comparing Excel/CSV files without any coding. Upload multiple files, select merge keys, and download the combined output — built for non-technical data teams.",
+        tech: ["Python", "pandas", "openpyxl", "Vercel", "HTML/JS"],
+        features: [
+          "Multi-file Excel & CSV merge",
+          "Smart column mapping & key selection",
+          "Mismatch & duplicate highlighting",
+          "One-click download of merged output"
+        ],
+        link: "https://filesmerger-mu.vercel.app/"
+      },
+      datacomp: {
+        title: "Data Comparison Tool",
+        badgeText: "Streamlit",
+        badgeClass: "bg-teal-100 text-teal-800",
+        desc: "A Streamlit-powered app to compare two datasets side by side. Instantly highlights differences, mismatches, and missing rows — ideal for QC, auditing, and data validation workflows.",
+        tech: ["Python", "Streamlit", "pandas", "openpyxl"],
+        features: [
+          "Side-by-side dataset diff view",
+          "Color-coded mismatch row highlighting",
+          "Summary statistics & counts",
+          "Supports CSV & Excel formats"
+        ],
+        link: "https://datacomparisontool.streamlit.app/"
+      },
+      filemergerpb: {
+        title: "File Merger PB (Streamlit)",
+        badgeText: "Streamlit",
+        badgeClass: "bg-blue-100 text-blue-800",
+        desc: "A Streamlit-based drag-and-drop file merger designed for data teams. Supports multi-sheet Excel files and flexible column mapping, with no technical knowledge required to use.",
+        tech: ["Python", "Streamlit", "pandas"],
+        features: [
+          "Drag-and-drop file upload interface",
+          "Multi-sheet Excel workbook support",
+          "Flexible column alignment & mapping",
+          "Download merged file with one click"
+        ],
+        link: "https://filemergerpb.streamlit.app/"
+      },
+      privatejobs: {
+        title: "Private Jobs Portal",
+        badgeText: "Firebase",
+        badgeClass: "bg-red-100 text-red-800",
+        desc: "A real-time job listing portal for private sector roles built on Firebase. Employers post jobs and candidates browse with live updates — clean UI and fast performance.",
+        tech: ["Firebase Firestore", "HTML", "CSS", "JavaScript"],
+        features: [
+          "Real-time job post & listing updates",
+          "Category-wise job filtering",
+          "Employer job management panel",
+          "Fast, mobile-friendly interface"
+        ],
+        link: "https://privatejobs-33bc4.web.app/"
+      }
+    };
+
+    let openId = null;
+
+    function toggleDetail(id) {
+      const cards = document.querySelectorAll('.proj-card');
+      const ids = ['buddyinhills','stoneagehuts','filesmerger','datacomp','filemergerpb','privatejobs'];
+
+      // Toggle active card highlight
+      cards.forEach((c, i) => {
+        c.classList.toggle('active', ids[i] === id && openId !== id);
+      });
+
+      if (openId === id) {
+        document.getElementById('detailArea').innerHTML = '';
+        openId = null;
+        return;
+      }
+
+      openId = id;
+      const p = projects[id];
+
+      const techHTML = p.tech.map(t =>
+        `<span class="inline-block bg-gray-100 text-gray-700 text-xs px-2 py-1 rounded-full mr-1 mb-1">${t}</span>`
+      ).join('');
+
+      const featuresHTML = p.features.map(f =>
+        `<li class="feature-item text-sm text-gray-700">${f}</li>`
+      ).join('');
+
+      document.getElementById('detailArea').innerHTML = `
+        <div class="detail-panel mt-4 border border-purple-200 bg-purple-50 rounded-xl p-5">
+          <div class="flex justify-between items-start mb-3">
+            <div>
+              <span class="inline-block ${p.badgeClass} text-xs font-bold px-2 py-1 rounded-full mb-2">${p.badgeText}</span>
+              <h3 class="text-lg font-bold text-gray-900">${p.title}</h3>
+            </div>
+            <button onclick="closeDetail()" class="text-gray-400 hover:text-gray-600 text-sm font-medium">✕ close</button>
+          </div>
+          <p class="text-sm text-gray-600 leading-relaxed mb-4">${p.desc}</p>
+
+          <div class="mb-3">
+            <p class="text-xs font-bold text-gray-500 uppercase tracking-wide mb-2">Tech Stack</p>
+            <div>${techHTML}</div>
+          </div>
+
+          <div class="mb-4">
+            <p class="text-xs font-bold text-gray-500 uppercase tracking-wide mb-2">Key Features</p>
+            <ul class="space-y-1">${featuresHTML}</ul>
+          </div>
+
+          <a href="${p.link}" target="_blank"
+             class="inline-flex items-center gap-2 bg-purple-600 hover:bg-purple-700 text-white text-sm font-medium px-4 py-2 rounded-lg transition">
+            🔗 View Live Project ↗
+          </a>
+        </div>
+      `;
+    }
+
+    function closeDetail() {
+      document.getElementById('detailArea').innerHTML = '';
+      document.querySelectorAll('.proj-card').forEach(c => c.classList.remove('active'));
+      openId = null;
+    }
+  </script>
+
 </body>
 </html>
